@@ -6,11 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## React
 
-
-
 ## Tailwind CSS
 
 https://tailwindcss.com/docs
-
 
 https://tailwind-elements.com/
