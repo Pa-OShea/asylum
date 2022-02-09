@@ -11,3 +11,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 https://tailwindcss.com/docs
 
 https://tailwind-elements.com/
+
+## Thoughts
+
+-   redux toolkit for api calls
+-   card / table / list ?
+
+    -   card view show all stories and issues
+    -   list or table view is col tabs and collapse lists for stories and issues
+
+-   cache projects loaded into redux

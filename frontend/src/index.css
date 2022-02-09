@@ -1,7 +1,4 @@
 @import '~@csstools/normalize.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
 	margin: 0;
@@ -14,3 +11,7 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
