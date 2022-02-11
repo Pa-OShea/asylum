@@ -21,3 +21,5 @@ https://tailwind-elements.com/
     -   list or table view is col tabs and collapse lists for stories and issues
 
 -   cache projects loaded into redux
+
+-   use HOC for redux state

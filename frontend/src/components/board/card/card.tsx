@@ -1,13 +1,18 @@
 import React from 'react';
 
-const Card = () => {
+type Props = {
+	id: string;
+	title: string;
+	description?: string;
+};
+
+const Card = (props: Props) => {
+	const { id, title, description } = props;
 	return (
 		<div className="flex justify-center p-3">
-			<div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-				<h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">Card title</h5>
-				<p className="text-gray-700 text-base mb-4">
-					Some quick example text to build on the card title and make up the bulk of the card's content.
-				</p>
+			<div className="block p-6 rounded shadow-lg bg-white max-w-sm w-full">
+				<h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{title}</h5>
+				<p className="text-gray-700 text-base mb-4">{description}</p>
 				<button
 					type="button"
 					className="inline-block px-6 py-2.5 bg-blue-600
