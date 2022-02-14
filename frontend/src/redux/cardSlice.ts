@@ -30,18 +30,21 @@ const initialState = [
 		columnId: 'column-1',
 		title: 'Card title',
 		description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-	}
+	},
 ] as Card[];
 
 const cardSlice = createSlice({
 	name: 'cards',
 	initialState,
 	reducers: {
-		update(state, action: PayloadAction<string>) {
-			console.log('work in progress');
+		addNewCard(state, action: PayloadAction<Card>) {
+			state.push(action.payload);
+		},
+		deleteCard(state, action: PayloadAction<string>) {
+			return state.filter(card => card.id !== action.payload);
 		},
 	},
 });
 
-export const { update } = cardSlice.actions;
+export const { addNewCard, deleteCard } = cardSlice.actions;
 export default cardSlice.reducer;

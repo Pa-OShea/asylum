@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface Column {
 	id: string;
-	projectId: 'project-1';
+	projectId: string;
 	title: string;
 }
 
@@ -18,11 +18,14 @@ const columnSlice = createSlice({
 	name: 'column',
 	initialState,
 	reducers: {
-		update(state, action: PayloadAction<string>) {
-			console.log('work in progress');
+		addNewColumn(state, action: PayloadAction<Column>) {
+			state.push(action.payload);
+		},
+		deleteColumn(state, action: PayloadAction<string>) {
+			return state.filter(column => column.id !== action.payload);
 		},
 	},
 });
 
-export const { update } = columnSlice.actions;
+export const { addNewColumn, deleteColumn } = columnSlice.actions;
 export default columnSlice.reducer;

@@ -29,14 +29,14 @@ const initialState = [
 ] as Project[];
 
 const projectSlice = createSlice({
-	name: 'column',
+	name: 'projects',
 	initialState,
 	reducers: {
-		update(state, action: PayloadAction<string>) {
-			console.log('work in progress');
-		},
+		addNewProject(state, action: PayloadAction<Project>) {
+			state.push(action.payload)
+		}
 	},
 });
 
-export const { update } = projectSlice.actions;
+export const { addNewProject } = projectSlice.actions;
 export default projectSlice.reducer;

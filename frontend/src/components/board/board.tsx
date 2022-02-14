@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppSelector } from '../../redux/hooks';
-import Card from './card/card';
+import AddColumn from './column/addColumn';
 import Column from './column/column';
 
 const Board = () => {
@@ -11,6 +11,7 @@ const Board = () => {
 			{columns.map((column, index) => {
 				return <Column id={column.id} key={`column_${column.title}_${index}`} title={column.title} />;
 			})}
+			<AddColumn />
 		</div>
 	);
 };
