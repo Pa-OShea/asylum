@@ -19,8 +19,11 @@ style the cards - done
 style the column - done 
 style the add card btn - done
 
-textfield for add card 
-textfield for add column
+textfield for add card - done 
+textfield for add column - done 
+
+focus input on add
+modal for card details
 style the delete card btn
 style the delete card btn
 modal for editing
