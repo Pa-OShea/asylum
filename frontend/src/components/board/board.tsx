@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppSelector } from '../../redux/hooks';
-import AddColumn from './column/addColumn';
+import AddColumn from './column/addColumnBtn';
 import Column from './column/column';
 
 const Board = () => {

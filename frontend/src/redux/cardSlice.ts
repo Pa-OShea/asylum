@@ -17,7 +17,7 @@ const initialState = [
 	{
 		id: 'card-2',
 		columnId: 'column-1',
-		title: 'Card title',
+		title: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
 	},
 	{
 		id: 'card-3',

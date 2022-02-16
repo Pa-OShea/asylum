@@ -33,8 +33,8 @@ const projectSlice = createSlice({
 	initialState,
 	reducers: {
 		addNewProject(state, action: PayloadAction<Project>) {
-			state.push(action.payload)
-		}
+			state.push(action.payload);
+		},
 	},
 });
 

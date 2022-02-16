@@ -61,12 +61,12 @@ const Projects = () => {
 			const id = `column_${uuid()}`;
 			const project: Project = {
 				id,
-				title: "New Project"
-			}
-			dispatch(addNewProject(project))
-			dispatch(updateCurrentProject(id))
-		})
-	}
+				title: 'New Project',
+			};
+			dispatch(addNewProject(project));
+			dispatch(updateCurrentProject(id));
+		});
+	};
 
 	const getProject = (project: Project, index: number) => {
 		let classToUse = projectItemClass;

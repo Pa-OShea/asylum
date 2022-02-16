@@ -22,4 +22,7 @@ https://tailwind-elements.com/
 
 -   cache projects loaded into redux
 
--   use HOC for redux state
+-   use HOC for redux state ?
+
+-   styled-components for style ?
+-   use tailwind theme - colour palette
